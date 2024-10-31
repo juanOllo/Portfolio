@@ -1,0 +1,69 @@
+:root {
+    --azul01: #022873;
+    --azul02: #023E73;
+    --amarillo: #D9C873; 
+    --marron: #594302;
+    --casiblanco: #D9CCC1;
+}
+
+body {
+    max-width: 100vw;
+    box-sizing: content-box;
+    background-color: var(--casiblanco);
+    margin: 0;
+}
+
+#navbar {
+    position: sticky;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--azul02);
+}
+
+#main {
+    /* background-color: red; */
+    width: 70vw;
+    max-width: 60rem;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+#presentacion {
+    width: 46rem;
+    max-width: 90%;
+    height: 26rem;
+    padding: 2rem;
+    background-color: var(--amarillo);
+    border: 0.5rem solid var(--azul02);
+    margin: 20vh auto 0;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentacion-info {
+    /* background-color: red; */
+    max-width: 70%;
+}
+
+#presentacion-foto {
+    /* background-color: green; */
+    max-width: 30%;
+    height: 1rem;
+}
+
+#presentacion-info h1 {
+    color: var(--azul01);
+}
+
+#presentacion-info p {
+    color: var(--marron);
+    margin-left: 1rem;
+}
+
+#nombre {
+    font-size: 3rem;
+}
