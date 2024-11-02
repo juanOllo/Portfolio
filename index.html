@@ -3,27 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posrtfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header id="navbar">
+    <div id="bottom"></div>
+    <div id="presentacion-direct"></div>
 
-    </header>
     <main id="main">
+        
         <div id="presentacion">
             <div id="presentacion-info">
                 <h1>Hola! mi nombre es <br><span id="nombre">Juan Pablo Ollo</span></h1>
                 <p>
-                    Soy de Argentina, tengo 24 años y busco aplicar como desarrollador frontEnd.
-                    <br>Me introduje a la programacion en la Universidad Nacional de Rio Cuarto en la carrera Analista en Computación y posterior a eso
-                    me formé de manera autodidacta en la pagina freeCodeCamp y elaborando diversos proyectos personales.
-                    <br>Me gusta el trabajo en equipo y en solitario, 
+                    Soy de Argentina, tengo 24 años y busco aplicar como desarrollador web Frontend.
+                    <br style="margin-bottom: 10px;">Me introduje a la programacion en la Universidad Nacional de Rio Cuarto en la carrera Analista en Computación y posterior a eso
+                    me formé de manera autodidacta principalmente en la pagina freeCodeCamp y elaborando diversos proyectos personales.
+                    <br style="margin-bottom: 10px;">Con muchas ganas de trabajar y seguir aprendiendo!!.
                 </p>
             </div>
-            <div id="presentacion-foto"></div>
+            <div id="presentacion-foto">
+                <img src="./images/foto01.jpg" alt="mi foto">
+            </div>
+            <div id="presentacion-tecnologias">
+                <h2>Herramientas:</h2>
+                <img src="./images/html logo.png" alt="html logo" height="50px">
+                <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="css logo" height="50px">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo">
+                <img src="https://static-00.iconduck.com/assets.00/git-icon-2048x2048-juzdf1l5.png" alt="Git logo">
+            </div>
+        </div>
+        
+        <div id="navbar">
+            <div id="navbar-line"></div>
+            <a class="btn" id="presentacion-btn" href="#presentacion-direct">INICIO</a>
+            <a class="btn" id="proyectos-btn" href="#proyectos-direct">PROYECTOS</a>
+            <a class="btn" id="contacto-btn" href="#contacto-direct">CONTACTO</a>
+        </div>
+
+        <div id="proyectos-direct"></div>
+
+        <div id="proyectos">
+            <span>
+                <h2>Proyectos:</h2>
+                <div id="proyecto-info">
+                    <div class="info">
+                        <h3>Lector de comic</h3>
+                        <p>informacion</p>
+                        <h4>TECNOLOGIAS: 
+                            <img src="./images/html logo.png" alt="html logo" height="50px">
+                            <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="css logo" height="50px">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo" height="50px">
+                        </h4>
+                        <img style="margin: 0 auto;" width="35%" src="./images/proyecto01.png" alt="">
+                        <a href="https://juanollo.github.io/Comic-Reader/" target="_blank">Link al proyecto.</a>
+                    </div>
+                    <div class="info">
+                        <h3>Calculadora</h3>
+                        <p>informacion de la calculadora</p>
+                        <h4>TECNOLOGIAS: 
+                            <img src="./images/html logo.png" alt="html logo" height="50px">
+                            <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="css logo" height="50px">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo" height="50px">
+                        </h4>
+                        <img style="margin: 0 auto;" width="35%" src="./images/proyecto02.png" alt="">
+                        <a href="https://juanollo.github.io/Calculator/" target="_blank">Link al proyecto.</a>
+                    </div>
+                    <div class="info">
+                        <h3>Reproductor de Musica</h3>
+                        <p>informacion del repro</p>
+                        <h4>TECNOLOGIAS: 
+                            <img src="./images/html logo.png" alt="html logo" height="50px">
+                            <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="css logo" height="50px">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo" height="50px">
+                        </h4>
+                        <img style="margin: 0 auto;" width="35%" src="./images/proyecto03.png" alt="">
+                        <a href="https://juanollo.github.io/Music-Player/" target="_blank">Link al proyecto.</a>
+                    </div>
+                </div>
+            </span>
+            <div id="proyectos-tile">
+                <div onclick="showInfo(0)" id="proyecto01" class="proyecto">
+                    <div class="proyecto-tapa">
+                        <h3>LECTOR DE COMIC</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo">
+                    </div>
+                </div>
+                <div onclick="showInfo(1)" id="proyecto02" class="proyecto">
+                    <div class="proyecto-tapa">
+                        <h3>CALCULADORA</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo">
+                    </div>
+                </div>
+                <div onclick="showInfo(2)" id="proyecto03" class="proyecto">
+                    <div class="proyecto-tapa">
+                        <h3>REPRODUCTOR DE MUSICA</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contacto-direct"></div>
+
+        <div id="contacto">
+            <h2>Trabajemos juntos!</h2>
+            <!-- <a id="mail">
+                <img class="yahoo-img" src="./imgs/mail icon 2.png">
+              </a> -->
+              <!-- <a id="mail">
+                <img class="yahoo-img" src="https://cdn-icons-png.flaticon.com/512/179/179345.png">
+              </a> -->
+            <a href="https://www.linkedin.com/in/juan-pablo-ollo-109847324/" target="_blank">
+                <!-- <i class="fab fa-linkedin-in"></i> -->
+                <img height="70px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png">
+            </a>
+            <a href="https://github.com/juanOllo" target="_blank">
+                <img height="70px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+            </a>
         </div>
     </main>
+    <script src="script.js"></script>
     
 </body>
 </html>
