@@ -254,7 +254,8 @@ body {
 }
 
 #proyecto-info {
-    height: 50%;
+    height: 70%;
+    /* max-height: 90%; */
     width: 90%;
     border: 1rem solid var(--casiblanco);
     border-radius: 0 2rem 2rem 2rem;;
@@ -284,6 +285,14 @@ body {
     row-gap: 1rem;
     /* gap: 1fr; */
     height: 100%;
+}
+
+.info-span {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .info * {
@@ -352,7 +361,8 @@ body {
 .proyecto-tapa {
     background-color: var(--amarillo);
     height: 90%;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
+    border-radius: 2rem 2rem 1.5rem 1.5rem;
 
     position: relative;
     transform: skew(0deg);
@@ -432,9 +442,9 @@ body {
 }
 
 #contacto {
-    width: 16rem;
+    width: 36rem;
     max-width: 90%;
-    height: 16rem;
+    height: 26rem;
     padding: 2rem;
     background-color: var(--amarillo);
     border: 0.5rem solid var(--azul02);
@@ -444,20 +454,83 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 #contacto h2 {
     color: var(--azul01);
+    width: 100%;
+    text-align: center;
 }
-
 
 #contacto a:hover {
-    scale: 1.2;
+    scale: 1.1;
 }
 
-/* #contacto img {
-    fill: var(--azul01);
+/* #contacto a {
+    margin-left: -40%;
 } */
+
+#contacto-form {
+    /* background-color: red; */
+    height: 90%;
+    width: fit-content;
+    /* height: fit-content; */
+    margin: auto auto auto 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    /* gap: 2rem; */
+}
+
+.contacto-input, #input-button {
+    background-color: var(--casiblanco);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+}
+
+.contacto-input:focus, .contacto-input:hover {
+    border: 0.2rem solid var(--marron);
+    /* border-radius: 0; */
+    padding: 0.313rem;
+    outline: none;
+}
+
+#input-button {
+    margin: 0 auto;
+    border: 0.25rem solid var(--azul02);
+}
+
+#input-button:hover {
+    animation: navbar-buttons-anim 0.07s ease-in-out 0s forwards;
+    cursor: pointer;
+}
+
+#contacto-redes {
+    background-color: var(--casiblanco);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    height: 75%;
+    margin-left: -30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contacto-redes:hover {
+    border: 0.2rem solid var(--marron);
+    outline: none;
+}
+
+#contacto-redes * {
+    margin: 0 auto;
+}

@@ -24,3 +24,11 @@ const anim = (a, str) => {
     a.offsetHeight;
     a.style.animation = str;
 }
+
+
+
+const form = document.getElementById("contacto-form");
+
+form.addEventListener("submit", () => {
+    form.preventDefault();
+})
