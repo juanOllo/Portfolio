@@ -8,6 +8,20 @@ html {
     --amarillo: #D9C873; 
     --marron: #594302;
     --casiblanco: #D9CCC1;
+
+    --ffamily01: "Fraunces", serif;
+    --ffamily02: "Fira Sans Condensed", sans-serif;
+    --ffamily03: "Patua One", serif;
+}
+
+h1,
+ h2,
+ h3,
+ h4,
+.btn,
+#input-button
+{
+    font-family: var(--ffamily01);
 }
 
 * {
@@ -159,7 +173,7 @@ body {
     height: 0;
     position: relative;
     top: -3rem;
-    left: -25%;
+    left: -20%;
     color: var(--azul01);
     font-size: 2rem;
 }
@@ -184,6 +198,9 @@ body {
     border: 0.3rem solid var(--marron); */
     border-radius: 0.5rem;
     padding: 0.3rem;
+
+    font-family: var(--ffamily02);
+    font-size: 0.9rem;
 }
 
 #nombre {
@@ -251,6 +268,7 @@ body {
     scale: 1.5;
     width: 30%;
     text-align: center;
+    margin-top: 1rem;
 }
 
 #proyecto-info {
@@ -307,6 +325,8 @@ body {
 .info p {
     color: var(--marron);
     margin-left: 1rem;
+    font-family: var(--ffamily02);
+    font-size: 0.9rem;
 }
 
 .info a {
@@ -316,10 +336,13 @@ body {
     padding: 0.5rem;
     border-radius: 0.4rem;
     margin: 0 auto;
+
+    font-family: var(--ffamily03);
 }
 
 .info a:hover {
-    background-color: var(--marron);
+    /* background-color: var(--marron); */
+    background-color: var(--azul01);
     color: var(--casiblanco);
     text-decoration: none;
 }
@@ -344,7 +367,9 @@ body {
 }
 
 .proyecto {
-    background-color: var(--marron);
+    /* background-color: var(--amarillo); */
+    /* background-color: #D9C873; */
+    background-color: #bbac64;
     border-radius: 2rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
     width: 40%;
@@ -366,7 +391,7 @@ body {
 
     position: relative;
     transform: skew(0deg);
-    box-shadow: 0.1rem -0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0.1rem -0.1rem 0.5rem rgba(0, 0, 0, 0.5);
 
     display: flex;
     flex-direction: column;
@@ -391,14 +416,14 @@ body {
         right: 5%;
         transform: skew(10deg);
         height: 80%;
-        box-shadow: 0.4rem -0.2rem 0.5rem 0.3rem rgba(0, 0, 0, 0.5);
+        box-shadow: 0.6rem -0.2rem 0.5rem 0.3rem rgba(0, 0, 0, 0.5);
     }
     100%{
         height: 80%;
         right: 5%;
         transform: skew(10deg);
         background-color: var(--casiblanco);
-        box-shadow: 0.4rem -0.2rem 0.5rem 0.3rem rgba(0, 0, 0, 0.5);
+        box-shadow: 0.6rem -0.2rem 0.5rem 0.3rem rgba(0, 0, 0, 0.5);
     }   
 }
 
@@ -473,7 +498,7 @@ body {
     margin-left: -40%;
 } */
 
-#contacto-form {
+form {
     /* background-color: red; */
     height: 90%;
     width: fit-content;
@@ -494,6 +519,10 @@ body {
     border-radius: 0.5rem;
 
     font-size: 1rem;
+}
+
+.contacto-input {
+    font-family: var(--ffamily02);
 }
 
 .contacto-input:focus, .contacto-input:hover {
