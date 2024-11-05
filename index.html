@@ -35,10 +35,14 @@
             <div id="presentacion-info">
                 <h1>Hola! mi nombre es <br><span id="nombre">Juan Pablo Ollo</span></h1>
                 <p>
-                    Soy de Argentina, tengo 24 años y busco aplicar como desarrollador web Frontend.
-                    <br style="margin-bottom: 10px;">Me introduje a la programación en la Universidad Nacional de Rio Cuarto en la carrera Analista en Computación y posterior a eso
+                    Soy de Argentina, tengo 24 años y busco aplicar como desarrollador web Frontend. 
+                </p>
+                <p>
+                    Me introduje a la programación en la Universidad Nacional de Rio Cuarto en la carrera Analista en Computación y posterior a eso
                     me formé de manera autodidacta principalmente en la pagina freeCodeCamp y elaborando diversos proyectos personales.
-                    <br style="margin-bottom: 10px;">Con muchas ganas de trabajar y seguir aprendiendo!!.
+                </p>
+                <p>
+                    Con muchas ganas de trabajar y seguir aprendiendo!!.
                 </p>
             </div>
             <div id="presentacion-foto">
@@ -72,15 +76,16 @@
                         <p>Mi primer proyecto web. Nacido principalmente para empezar la darme idea de 
                             lo que es crear una pagina desde cero y 
                             poner a prueba los primeros conceptos aprendidos de html y css.
-                            <br style="margin-bottom: 10px;">
+                            <br><br>
                             El proyecto trata de solucionar el problema de spoilers en una misma 
                             pagina de un comic. Al llegar a un nuevo capitulo nos encontramos con 
                             tentadoras imágenes que nos hacen perder el hilo de lo que estamos leyendo,
                             entonces ahora deberás desbloquear, en orden, cuadro por cuadro 
                             pasando el mouse por encima.
                         </p>
-
+                        
                         <div class="info-span">
+                            <!-- <iframe width="35%" src="https://juanollo.github.io/Comic-Reader/" frameborder="0"></iframe> -->
                             <img width="35%" src="./images/proyecto01.png" alt="">
                             <h4>TECNOLOGÍAS: 
                                 <br><br>
@@ -96,7 +101,7 @@
                         <h3>Calculadora.</h3>
                         <p>Calculadora básica como simples animaciones implementadas para 
                             empezar a trabajar con JavaScript.
-                            <br style="margin-bottom: 10px;">
+                            <br><br>
                             Proyecto para familiarizarme mas con el lenguaje. 
                             Dentro del script trabaje el flujo de información, funciones onclick y lógica de programación, 
                             no es mi primera vez con estos conceptos pero me pareció buena idea 
@@ -119,7 +124,7 @@
                         <h3>Reproductor de Música.</h3>
                         <p>Básico reproductor para ver y entender el manejo de archivos de audio 
                             dentro de una pagina.
-                            <br style="margin-bottom: 10px;">
+                            <br><br>
                             La idea nace de haber encontrado este album que llevaba meses borrado de todo internet, 
                             un dia sin previo aviso las canciones fueron subidas por un usuario random 
                             y fue ahi que decidí armar este proyecto de preservación musical, 
@@ -163,26 +168,42 @@
         </div>
 
         <div id="contacto-direct"></div>
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
         <div id="contacto">
-            <h2>Trabajemos juntos!</h2>
+            <!-- <h2>Trabajemos juntos!</h2> -->
+            <h2 id="form-h2">Contáctate conmigo:</h2>
             
-            <!-- <form action="https://api.web3forms.com/submit" method="POST" id="contacto-form"> -->
-            <form action="https://formsubmit.co/juanollo2024@gmail.com" method="POST" >    
+            <form action="https://api.web3forms.com/submit" method="POST" id="contacto-form" target="dummyframe">
+                <input type="hidden" name="access_key" value="8eab9cab-cd84-4ddd-8aed-dc52ee8c4655">
+                <!-- <input type="hidden" name="redirect" value="https://juanollo.github.io/Portfolio/#contacto-direct"> -->
+                <!-- <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html#contacto-direct"> -->
 
-                <h2>Contáctate conmigo:</h2>
-                <!-- <input type="hidden" name="access_key" value="8eab9cab-cd84-4ddd-8aed-dc52ee8c4655"> -->
-                <input inputmode="input-nombre" type="text" name="nombre" placeholder="Tu nombre" class="contacto-input" required>
-                <input inputmode="input-email" type="text" name="email" placeholder="Tu email/contacto" class="contacto-input" required>
-                <textarea rows="7" cols="40" inputmode="input-mensaje" name="mensaje" placeholder="Tu mensaje" class="contacto-input" required></textarea>
-                <button id="input-button" type="submit">Enviar</button>
+            <!-- <form action="https://formsubmit.co/juanollo2024@gmail.com" method="POST" >     -->
 
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contacto-direct">
-                <input type="hidden" name="_captcha" value="false">
+
+                <input autocomplete="off" inputmode="input-nombre" type="text" name="nombre" placeholder="Nombre" class="contacto-input" required>
+                <input autocomplete="on" inputmode="input-email" type="text" name="email" placeholder="Email/contacto" class="contacto-input" required>
+                <textarea rows="10" cols="50" inputmode="input-mensaje" name="mensaje" placeholder="Mensaje" class="contacto-input" required></textarea>
+                <button id="input-button" type="submit">ENVIAR</button>
+
+                <!-- <input type="hidden" name="_next" value="https://juanollo.github.io/Portfolio/#contacto-direct"> -->
+                <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+                <div id="cargando">
+                    <h4>
+
+                        Enviando... <br>Por favor no cierre la pagina.
+                    </h4>
+                </div>
+
+                <div id="mensaje-enviado">
+                    <h2>Mensaje enviado con éxito!!</h2>
+                </div>
             </form>
 
+                <!-- <hr> -->
             <div id="contacto-redes">
-                <h2>Mis redes:</h2>
                 <a href="https://www.linkedin.com/in/juan-pablo-ollo-109847324/" target="_blank">
                     <img height="70px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png">
                 </a>

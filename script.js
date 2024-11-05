@@ -1,8 +1,11 @@
+//  TAREAS
+//      ver tema iframes para los proyectos
+
 const infoSpans = document.querySelectorAll(".info");
 // const proyectosList = document.querySelectorAll(".proyecto");
 const proyectoInfo = document.getElementById("proyecto-info");
 
-console.log(infoSpans);
+// console.log(infoSpans);
 
 function showInfo(index) {
 
@@ -27,8 +30,30 @@ const anim = (a, str) => {
 
 
 
+// const form = document.querySelector("form");
 const form = document.getElementById("contacto-form");
+const mensajeEnviado = document.getElementById("mensaje-enviado");
+const cargando = document.getElementById("cargando");
+// console.log(form);
 
-form.addEventListener("submit", () => {
-    form.preventDefault();
+form.addEventListener("submit", (event) => {
+    anim(form[4], "input-button-anim 0.25s ease-in-out 0s forwards")
+
+    for(let i = 3; i > 0; i--) {
+        anim(form[i], `form-anim 0.2s ease-in-out ${(5-i)/4}s forwards`);
+    }
+
+    setTimeout(() => {
+        cargando.style.display = "block";
+        cargando.style.animation = "cargando-anim 2s ease-in-out 0s 5";
+    }, 1500)
+
+    setTimeout(() => {
+        cargando.style.display = "none";
+        mensajeEnviado.style.display = "block";
+        mensajeEnviado.style.animation = "mensaje-enviado-anim 0.3s ease-in-out 0s forwards";
+    }, 12000)
+
+        //si lo activas no manda el mail, sirve para testear :D 
+    // event.preventDefault();
 })
