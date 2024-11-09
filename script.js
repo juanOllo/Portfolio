@@ -57,3 +57,30 @@ form.addEventListener("submit", (event) => {
         //si lo activas no manda el mail, sirve para testear :D 
     // event.preventDefault();
 })
+
+
+
+// RESPONSIVE ///////////////////////////////////////////////////////////
+
+
+const responciveBtns = document.querySelectorAll(".responsive-btn");
+const sections = document.querySelectorAll(".section");
+for(let rb of responciveBtns) {
+    rb.addEventListener("click", () => {
+        for(let s of sections) {
+            if(s.className === "section selected"){
+                s.classList.remove("selected");
+                anim(s, "responsive-open-anim 0.2s ease-in-out 0s forwards");
+                setTimeout(()=>{
+                    s.style.height = "10svh"
+                }, 500);
+                s.children[0].style.display = "block"
+            };
+        }
+
+        rb.parentElement.classList.add("selected");
+        // rb.parentElement.style.height = "80svh";
+        anim(rb.parentElement, "responsive-open-anim 0.2s ease-in-out 0s forwards reverse");
+        rb.style.display = "none";
+    })
+}
