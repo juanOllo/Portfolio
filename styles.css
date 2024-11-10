@@ -280,7 +280,7 @@ body {
     color: var(--azul01);
     /* scale: 1.5; */
     font-size: 2.2rem;
-    width: 30%;
+    width: 40%;
     text-align: center;
     margin-top: 1rem;
 }
@@ -721,7 +721,8 @@ hr {
     }
 
     #presentacion,
-    #contacto 
+    #contacto, 
+    #proyectos 
     {
         box-shadow: none;
         background-color: rgba(0, 0, 0, 0.5);
@@ -746,8 +747,8 @@ hr {
     }
     #presentacion h1 {
         color: var(--amarillo);
-        margin-bottom: 3rem;
-        text-align: end;
+        margin-bottom: 3svh;
+        text-align: center;
     }
 
     #presentacion p {
@@ -797,6 +798,14 @@ hr {
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: space-around;
+
+        background-color: var(--azul02);
+        /* background-image: linear-gradient(var(--casiblanco) 1px, transparent 1px), linear-gradient(to right, var(--casiblanco) 1px, var(--amarillo) 1px);
+        background-size: 3.5rem 3.5rem; */
+    }
+
+    #proyectos h2 {
+        color: var(--casiblanco);
     }
 
     #proyectos span {
@@ -811,6 +820,8 @@ hr {
         height: 70%;
         margin: 0;
         overflow-y: scroll;
+        /* background-color: var(--amarillo);
+        border-color: var(--amarillo); */
     }
 
     .info {
@@ -821,6 +832,9 @@ hr {
         width: 90%;
         height: 25%;
         background-color: var(--azul02);
+        background-image: linear-gradient(var(--azul02) 1px, transparent 1px), linear-gradient(to right, var(--azul02) 1px, var(--casiblanco) 1px);
+        /* background-image: linear-gradient(var(--casiblanco) 1px, transparent 1px), linear-gradient(to right, var(--casiblanco) 1px, var(--azul02) 1px); */
+        background-size: 3.5rem 3.5rem;
         /* background-color: rgba(0, 0, 0, 0.5); */
 
         display:flex;
@@ -842,7 +856,7 @@ hr {
         min-width: 7rem;
         width: 25rem;
         height: 6rem;
-        margin: 0 1.8rem;
+        margin: 0 1rem;
         /* margin-left: 50%; */
 
         font-size: 0.65rem;
