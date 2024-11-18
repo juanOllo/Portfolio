@@ -134,6 +134,26 @@ body {
 }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ///////////////////////////////////////////////////////////// */
 /* MAIN */
 
@@ -232,6 +252,29 @@ body {
     height: 13rem;
     box-shadow: 1rem 0.5rem var(--marron);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* /////////////////////////////////////////////////////////// */
 /* PROYECTOS */
@@ -713,17 +756,12 @@ hr {
     #contacto {
         max-width: 100%;
         width: 100%;
-        border-radius: 2rem;
+        border-radius: 0;
         border: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-    }
 
-    #presentacion,
-    #contacto, 
-    #proyectos 
-    {
         box-shadow: none;
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -891,7 +929,9 @@ hr {
         border: none;
         border-radius: 2rem;
         background-color: var(--casiblanco);
-        margin: 0 0.7rem 0.7rem auto;
+        margin: 0 0 0 auto;
+
+        scale: 0.7;
     }
 
 
