@@ -37,11 +37,14 @@ const cargando = document.getElementById("cargando");
 // console.log(form);
 
 form.addEventListener("submit", (event) => {
-    anim(form[4], "input-button-anim 0.25s ease-in-out 0s forwards")
+    // anim(form[4], "input-button-anim 0.25s ease-in-out 0s forwards")
 
-    for(let i = 3; i > 0; i--) {
-        anim(form[i], `form-anim 0.2s ease-in-out ${(5-i)/4}s forwards`);
+    for(let i = 4; i > 0; i--) {
+        // anim(form.children[i], `form-anim 0.2s ease-in-out ${(5-i)/4}s forwards`);
+        anim(form.children[i], `form-anim 0.2s ease-in-out 1.5s forwards`);
     }
+
+    console.log("form 1 0",form.children[0]);
 
     setTimeout(() => {
         cargando.style.display = "block";
