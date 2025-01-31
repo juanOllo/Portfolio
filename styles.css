@@ -5,11 +5,18 @@ html {
 }
 
 :root {
-    --azul01: #022873;
+    /* --azul01: #022873;
     --azul02: #023E73;
     --amarillo: #D9C873; 
     --marron: #594302;
-    --casiblanco: #D9CCC1;
+    --casiblanco: #D9CCC1; */
+
+    --azul01: #022873;
+    --azul02: #02345f;
+    --amarillo: #d4b96c; 
+    --marron: #594302;
+    --fondoblanco: #c5ac96;
+    --casiblanco: #cebcaa;
 
     --ffamily01: "Fraunces", serif;
     --ffamily02: "Fira Sans Condensed", sans-serif;
@@ -73,7 +80,7 @@ body {
     width: 100vw;
     margin: 0;
     z-index: -10;
-    background-image: linear-gradient(var(--azul02) 1px, transparent 1px), linear-gradient(to right, var(--azul02) 1px, var(--casiblanco) 1px);
+    background-image: linear-gradient(var(--azul02) 1px, transparent 1px), linear-gradient(to right, var(--azul02) 1px, var(--fondoblanco) 1px);
     background-size: 3.5rem 3.5rem;
 }
 
@@ -213,6 +220,7 @@ body {
 
 #presentacion-tecnologias {
     background-color: var(--casiblanco);
+    /* background-color: #d1c7be; */
     border-radius: 0.5rem;
     height: fit-content;
     width: fit-content;
@@ -251,7 +259,7 @@ body {
 
 #presentacion-info p {
     color: var(--marron);
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     /* background-color: rgba(255, 255, 255, 0.5);
     border: 0.3rem solid var(--marron); */
     border-radius: 0.5rem;
@@ -460,6 +468,7 @@ body {
     /* background-color: var(--amarillo); */
     /* background-color: #D9C873; */
     background-color: #bbac64;
+    background-color: #a19557;
     /* background-color: red; */
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
