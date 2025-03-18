@@ -758,13 +758,6 @@ textarea{
     cursor: pointer;
 }
 
-hr {
-    width: 100%;
-    background-color: var(--azul02);
-    border: none;
-    height: 0.3rem;
-}
-
 #contacto-redes {
     background-color: var(--amarillo);
     border: 0.4rem solid var(--azul02);
@@ -788,9 +781,40 @@ hr {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 100vh) {
     body {
-        width: 100vw;
+        width: 95svw;
+        margin: 0 auto;
         /* background-color: black; */
         /* background-color: var(--amarillo); */
         box-sizing: border-box;
@@ -802,6 +826,7 @@ hr {
     #contacto-direct
     {
         display: none;
+        /* max-width: 90%; */
     }
 
     h1,
@@ -836,10 +861,11 @@ hr {
 
         box-shadow: none;
         background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 3rem;
     }
 
     #presentacion {
-        height: 80svh;
+        height: fit-content;
         /* width: 100%; */
         max-width: 100svw;
 
@@ -858,7 +884,7 @@ hr {
     #presentacion h1 {
         color: var(--amarillo);
         margin-bottom: 3svh;
-        text-align: center;
+        text-align: end;
     }
 
     #presentacion p {
@@ -875,11 +901,19 @@ hr {
     }
     
     #presentacion-foto {
-        margin: 3rem 0;
+        margin: 2rem 0;
+        height: fit-content;
+        width: 50svw;
+        height: 50svw;
     } 
     
     #presentacion-foto img{
-        height: 10rem;
+        margin: 0 auto;
+        background-color: red;
+        height: 50svw;
+        max-height: 15rem;
+        /* width: fit-content; */
+        max-width: fit-content;
         /* width: 10%; */
         /* box-shadow: 1rem 0.5rem var(--azul02); */
         box-shadow: 1rem 0.5rem rgba(0, 0, 0, 0.5);
@@ -887,7 +921,10 @@ hr {
 
     #presentacion-tecnologias {
         margin-top: 2rem;
-        width: fit-content;
+        /* width: fit-content; */
+        min-width: 1rem;
+        width: 80svw;
+        max-width: fit-content;
     }
 
     #presentacion-tecnologias h2 {
@@ -909,13 +946,13 @@ hr {
         flex-direction: column;
         justify-content: space-around;
 
-        background-color: var(--azul02);
+        /* background-color: var(--azul02); */
         /* background-image: linear-gradient(var(--casiblanco) 1px, transparent 1px), linear-gradient(to right, var(--casiblanco) 1px, var(--amarillo) 1px);
         background-size: 3.5rem 3.5rem; */
     }
 
     #proyectos h2 {
-        color: var(--casiblanco);
+        color: var(--amarillo);
     }
 
     #proyectos span {
@@ -995,6 +1032,7 @@ hr {
 
     #contacto-form {
         width: 90%;
+        gap: 1.5rem;
     }
 
     #contacto-redes {
@@ -1006,19 +1044,26 @@ hr {
         scale: 0.7;
     }
 
-
-
-
-
-
-
-    #proyectos,
-    #contacto{
-        height: 10svh;
+    #contacto h4{
+        color: white;
     }
 
+    #mensaje-enviado h2{
+        color: var(--amarillo);
+    }
+
+
+
+
+
+
+    /* #proyectos,
+    #contacto{
+        height: 10svh;
+    } */
+
     /* #presentacion *, */
-    #proyectos *:not(.responsive-btn):not(.selected *),
+    /* #proyectos *:not(.responsive-btn):not(.selected *),
     #contacto *:not(.responsive-btn):not(.selected *),
     #presentacion *:not(.responsive-btn):not(.selected *){
         display: none;
@@ -1026,16 +1071,16 @@ hr {
 
     .responsive-btn:not(#presentacion-responsive-btn) {
         display: block;
-    }
+    } */
 
-    .responsive-btn {
+    /* .responsive-btn {
         font-family: var(--ffamily03);
         color: var(--azul01);
         border: none;
         padding: 0.7rem;
         border-radius: 0.5rem;
         background-color: var(--casiblanco);
-    }
+    } */
 }
 
 @keyframes responsive-open-anim {
