@@ -7,6 +7,25 @@ const proyectoInfo = document.getElementById("proyecto-info");
 
 // console.log(infoSpans);
 
+function updateYearsOld(){
+    const yoSpan = document.getElementById("years-old-span");
+    
+    const birthday = new Date("May 19, 2000 18:00:00");
+    const dateNow = new Date();
+
+    let currentYearsOld = 0;
+
+    if (birthday.getMonth() !== dateNow.getMonth()) {
+        currentYearsOld = dateNow.getFullYear() - birthday.getFullYear() - (1 * (birthday.getMonth() > dateNow.getMonth()? 1 : 0));
+    } 
+    else {
+        currentYearsOld = dateNow.getFullYear() - birthday.getFullYear() - (1 * (birthday.getDay() <= dateNow.getDay()? 1 : 0));
+    }
+    
+    yoSpan.textContent= `${currentYearsOld}`;
+}
+updateYearsOld();
+
 function showInfo(index) {
 
     anim(proyectoInfo, "info-anim 0.5s ease 0s forwards");
