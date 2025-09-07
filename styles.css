@@ -246,6 +246,7 @@ body {
     color: var(--azul01);
     font-size: 1.5rem;
     overflow-x: visible;
+    margin-right: -0.8rem;
 }
 
 #presentacion-tecnologias img {
