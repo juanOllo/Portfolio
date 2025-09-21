@@ -2,6 +2,7 @@
 //      ver tema iframes para los proyectos
 
 const infoSpans = document.querySelectorAll(".info");
+const infoBtns = document.querySelectorAll(".proyectos-close-btn");
 // const proyectosList = document.querySelectorAll(".proyecto");
 const proyectoInfo = document.getElementById("proyecto-info");
 
@@ -28,16 +29,27 @@ updateYearsOld();
 
 function showInfo(index) {
 
-    anim(proyectoInfo, "info-anim 0.5s ease 0s forwards");
+    console.log("showInfo", index);
 
-    setTimeout(() => {
+    // anim(proyectoInfo, "info-anim 0.5s ease 0s forwards");
+    proyectoInfo.style.display = "block";
+
+    // setTimeout(() => {
+        infoSpans[index].style.display = "flex";
+        // infoSpans[index].style.animation = "anim 1s ease-in-out 0s forwards";
+
+    // }, 250)
+
+}
+
+for(let b of infoBtns) {
+    b.addEventListener("click", () => {
+        // anim(proyectoInfo, "info-anim 0.5s ease 0s reverse");
+        proyectoInfo.style.display = "none";
         for(let span of infoSpans) {
             span.style.display = "none";
         }
-    
-        infoSpans[index].style.display = "flex";
-    }, 250)
-
+    })
 }
 
 //aplica animaciones
