@@ -251,9 +251,9 @@ body {
     margin-right: -0.8rem;
 }
 
-#presentacion-tecnologias img {
+/* #presentacion-tecnologias img {
     height: 4rem;
-}
+} */
 
 #presentacion-info {
     /* background-color: red; */
@@ -368,20 +368,7 @@ body {
 
 @keyframes info-anim {
     45%{
-        /* margin-top: calc(100%); */
-        /* height: 0; */
-        /* width: 0; */
-        /* background-color: transparent;
-        border-color: transparent;
-        z-index: -10; */
         opacity: 0%;
-    }
-    55%{
-        /* margin-top: calc(100%); */
-        /* height: 0; */
-        /* background-color: transparent;
-        border-color: transparent;
-        z-index: -10; */
     }
     100%{
         opacity: 100%;
@@ -415,13 +402,12 @@ body {
     display: none;
 
     background-color: var(--amarillo);
-    /* background-color: var(--casiblanco); */
     width: 60rem;
     max-width: 65%;
-    height: 35rem;
-    max-height: 70%;
-    /* padding: 1rem; */
-    /* border: 1rem solid var(--amarillo); */
+    /* height: 35rem; */
+    min-height: 35rem;
+    /* max-height: 70%; */
+    height: fit-content;
     border-radius: 1rem 0 0 0;
     margin: 50svh auto 0;
     transform: translateY(-50%);
@@ -495,7 +481,7 @@ body {
     width: 2rem;
     height: 2rem;
     /* position: relative; */
-    margin: 0 1rem -3rem auto;
+    margin: 0 1rem -2rem auto;
     /* left: 95%; */
     cursor: pointer;
     border: none;
@@ -567,11 +553,21 @@ body {
     /* scrollbar-color: var(--amarillo) transparent; */
 }
 
+.proyecto::after{
+    /* background-color: rebeccapurple; */
+    background-color: #a19557;
+    content: "";
+    width: 2.2rem;
+    height: 1rem;
+    margin: -0.4rem 0 auto auto;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
 .proyecto {
     background-color: #bbac64;
     background-color: #a19557;
     /* background-color: red; */
-    border-radius: 1rem;
+    border-radius: 1rem 0 1rem 1rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
     width: 15ch; /*no estoy muy seguro de q es ch*/
     min-height: 12ch;
