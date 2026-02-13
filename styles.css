@@ -693,11 +693,11 @@ body {
 }
 
 #contacto {
-    width: 36rem;
+    width: 16rem;
     max-width: 90%;
     /* height: 40rem; */
     height: calc(85vh - 5rem - 5rem);
-    height: 26rem;
+    height: 5rem;
     padding: 2rem;
     background-color: var(--amarillo);
     border: 0.35rem solid var(--azul02);
@@ -862,9 +862,13 @@ textarea{
     height: fit-content;
     /* margin-left: auto; */
     /* margin: 7% 0 auto; */
-    margin: auto 0 0;
+    /* margin: auto 0 0; */
 
     display: flex;
+
+    position: relative;
+    top: 2rem;
+    right: -3rem;
 }
 
 #contacto a {
@@ -906,13 +910,11 @@ textarea{
 
 
 
-
+/*
 @media only screen and (max-width: 100vh) {
     body {
         width: 95svw;
         margin: 0 auto;
-        /* background-color: black; */
-        /* background-color: var(--amarillo); */
         box-sizing: border-box;
     }
 
@@ -922,7 +924,6 @@ textarea{
     #contacto-direct
     {
         display: none;
-        /* max-width: 90%; */
     }
 
     h1,
@@ -962,19 +963,14 @@ textarea{
 
     #presentacion {
         height: fit-content;
-        /* width: 100%; */
         max-width: 100svw;
 
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        /* box-shadow: none; */
     }
 
     #presentacion-info {
-        /* background-color: var(--azul01); */
-        /* max-width: 100%; */
-        /* width: 100%; */
         color: var(--amarillo);
     }
     #presentacion h1 {
@@ -986,14 +982,9 @@ textarea{
     #presentacion p {
         color: var(--casiblanco);
     }
-
-    /* #presentacion *{
-        background-color: red;
-    } */
     
     #presentacion *:not(img){
         max-width: 95%;
-        /* width: 100%; */
     }
     
     #presentacion-foto {
@@ -1008,16 +999,12 @@ textarea{
         background-color: red;
         height: 50svw;
         max-height: 15rem;
-        /* width: fit-content; */
         max-width: fit-content;
-        /* width: 10%; */
-        /* box-shadow: 1rem 0.5rem var(--azul02); */
         box-shadow: 1rem 0.5rem rgba(0, 0, 0, 0.5);
     }
 
     #presentacion-tecnologias {
         margin-top: 2rem;
-        /* width: fit-content; */
         min-width: 1rem;
         width: 80svw;
         max-width: fit-content;
@@ -1041,10 +1028,6 @@ textarea{
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: space-around;
-
-        /* background-color: var(--azul02); */
-        /* background-image: linear-gradient(var(--casiblanco) 1px, transparent 1px), linear-gradient(to right, var(--casiblanco) 1px, var(--amarillo) 1px);
-        background-size: 3.5rem 3.5rem; */
     }
 
     #proyectos h2 {
@@ -1059,12 +1042,9 @@ textarea{
     }
 
     #proyecto-info {
-        /* width: 100%; */
         height: 70%;
         margin: 0;
         overflow-y: scroll;
-        /* background-color: var(--amarillo);
-        border-color: var(--amarillo); */
     }
 
     .info {
@@ -1076,20 +1056,12 @@ textarea{
         height: 25%;
         background-color: var(--azul02);
         background-image: linear-gradient(var(--azul02) 1px, transparent 1px), linear-gradient(to right, var(--azul02) 1px, var(--casiblanco) 1px);
-        /* background-image: linear-gradient(var(--casiblanco) 1px, transparent 1px), linear-gradient(to right, var(--casiblanco) 1px, var(--azul02) 1px); */
         background-size: 3.5rem 3.5rem;
-        /* background-color: rgba(0, 0, 0, 0.5); */
 
         display:flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: start;
-        /* gap: 4rem; */
-        /* display: grid;
-        grid-template-columns: 3;
-        grid-template-rows: 1; */
-
-        /* overflow-y: hidden; */
         overflow-x: scroll;
         overflow-y: hidden;
 
@@ -1100,7 +1072,6 @@ textarea{
         width: 7rem;
         height: 6rem;
         margin: 0 1rem;
-        /* margin-left: 50%; */
 
         font-size: 0.65rem;
 
@@ -1147,36 +1118,6 @@ textarea{
     #mensaje-enviado h2{
         color: var(--amarillo);
     }
-
-
-
-
-
-
-    /* #proyectos,
-    #contacto{
-        height: 10svh;
-    } */
-
-    /* #presentacion *, */
-    /* #proyectos *:not(.responsive-btn):not(.selected *),
-    #contacto *:not(.responsive-btn):not(.selected *),
-    #presentacion *:not(.responsive-btn):not(.selected *){
-        display: none;
-    }
-
-    .responsive-btn:not(#presentacion-responsive-btn) {
-        display: block;
-    } */
-
-    /* .responsive-btn {
-        font-family: var(--ffamily03);
-        color: var(--azul01);
-        border: none;
-        padding: 0.7rem;
-        border-radius: 0.5rem;
-        background-color: var(--casiblanco);
-    } */
 }
 
 @keyframes responsive-open-anim {
