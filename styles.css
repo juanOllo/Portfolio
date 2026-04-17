@@ -151,7 +151,7 @@ body {
         /* transform: translate(-10%, -10%); */
         box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
         border: 0.3rem solid var(--azul01);
-}
+    }
 }
 
 
@@ -200,7 +200,8 @@ body {
     background-color: var(--amarillo);
     /* border: 0.5rem solid var(--azul02); */
     border: 0.35rem solid var(--azul02);
-    margin: calc(50vh - 20rem) auto 0;
+    /* margin: calc(50vh - 28rem) auto 0; */
+    margin: 0 auto;
     border-radius: 0 2rem 2rem 2rem;
 
     /* esto seria para resoluciones mas bajas */
@@ -294,63 +295,6 @@ body {
 #presentacion-foto img {
     height: 13rem;
     box-shadow: 1rem 0.5rem var(--marron);
-}
-
-@media only screen and (max-width: 100vh) {
-    #presentacion{
-        min-width: none;
-        width: 80svw;
-        margin-top: 3rem;
-        height: fit-content;
-        /* min-height: 60svh; */
-        padding: 1rem;
-
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 1.5rem;
-    }
-    #presentacion-info {
-        max-width: 100%;
-    }
-    #presentacion-info h1 {
-        width: 100%;
-        font-size: 1.5rem;
-    }
-    #nombre {
-        margin-left: calc(50svw - 50%);
-        font-size: 2rem;
-    }
-    #presentacion-foto {
-        max-width: none;
-        /* width: 50svw; */
-        height: 10rem;
-        width: 10rem;
-        margin: 0 auto;
-    }
-    #presentacion-foto img {
-        height: 40svw;
-        max-height: 10rem;
-        box-shadow: 1rem 0.5rem var(--marron);
-    }
-    #presentacion-tecnologias {
-        margin-top: 3rem;
-    }
-    #presentacion-tecnologias h2 {
-        left: -10%;
-    }
-
-
-
-
-    #navbar {
-        scale: 0.9;
-        top: 3rem;
-        column-gap: 2rem;
-    }
-    #navbar-line {
-        width: 200%;
-        max-width: 200vw;
-    }
 }
 
 
@@ -1013,222 +957,81 @@ textarea{
 
 
 
-/*
+
+
 @media only screen and (max-width: 100vh) {
-    body {
-        width: 95svw;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
+    /* #main{
+        overflow: scroll;
+    } */
 
-    #navbar,
-    #presentacion-direct,
-    #proyectos-direct,
-    #contacto-direct
-    {
-        display: none;
-    }
 
-    h1,
-    #proyectos span h2{
-        font-size: 1.5rem;
-    }
-    
-    #nombre
-    {
-        font-size: 2.5rem;
-    }
 
-    #main {
-        max-height: 100%;
-        max-width: 100svw;
-        width: 100%;
-        background-color: var(--azul01);
-        background-color: rgba(0, 0, 0, 0.5);
-        margin: 0;
-    }
 
-    #presentacion,
-    #proyectos,
-    #contacto {
-        max-width: 100%;
-        width: 100%;
-        border-radius: 0;
-        border: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-
-        box-shadow: none;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding-top: 3rem;
-    }
-
-    #presentacion {
-        height: fit-content;
-        max-width: 100svw;
-
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-    }
-
-    #presentacion-info {
-        color: var(--amarillo);
-    }
-    #presentacion h1 {
-        color: var(--amarillo);
-        margin-bottom: 3svh;
-        text-align: end;
-    }
-
-    #presentacion p {
-        color: var(--casiblanco);
-    }
-    
-    #presentacion *:not(img){
-        max-width: 95%;
-    }
-    
-    #presentacion-foto {
-        margin: 2rem 0;
-        height: fit-content;
-        width: 50svw;
-        height: 50svw;
-    } 
-    
-    #presentacion-foto img{
-        margin: 0 auto;
-        background-color: red;
-        height: 50svw;
-        max-height: 15rem;
-        max-width: fit-content;
-        box-shadow: 1rem 0.5rem rgba(0, 0, 0, 0.5);
-    }
-
-    #presentacion-tecnologias {
-        margin-top: 2rem;
-        min-width: 1rem;
+    #presentacion{
+        min-width: none;
         width: 80svw;
-        max-width: fit-content;
-    }
+        margin-top: 50svh;
+        transform: translate(0, -50%);
+        height: fit-content;
+        /* min-height: 60svh; */
+        padding: 1rem;
 
-    #presentacion-tecnologias h2 {
-        font-size: 1rem;
-        top: -2rem;
-        left: 0;
-        color: var(--amarillo);
-    }
-
-    #presentacion-tecnologias img{
-        height: 2rem;
-        width: fit-content;
-    }
-
-    #proyectos {
-        height: 80svh;
-
-        flex-wrap: nowrap;
         flex-direction: column;
-        justify-content: space-around;
-    }
-
-    #proyectos h2 {
-        color: var(--amarillo);
-    }
-
-    #proyectos span {
-        height: 65%;
-        width: 90%;
-
-        justify-content: space-between;
-    }
-
-    #proyecto-info {
-        height: 70%;
-        margin: 0;
-        overflow-y: scroll;
-    }
-
-    .info {
-        row-gap: 0.5rem;
-    }
-
-    #proyectos-tile {
-        width: 90%;
-        height: 25%;
-        background-color: var(--azul02);
-        background-image: linear-gradient(var(--azul02) 1px, transparent 1px), linear-gradient(to right, var(--azul02) 1px, var(--casiblanco) 1px);
-        background-size: 3.5rem 3.5rem;
-
-        display:flex;
-        flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: start;
-        overflow-x: scroll;
-        overflow-y: hidden;
-
-    }
-
-    .proyecto {
-        min-width: 7rem;
-        width: 7rem;
-        height: 6rem;
-        margin: 0 1rem;
-
-        font-size: 0.65rem;
-
-    }
-
-    .proyecto img {
-        height: 2rem;
-        border-radius: 0.5rem;
-    }
-
-    .proyecto, .proyecto-tapa {
-        border-radius: 0.8rem;
-    }
-
-    #contacto {
-        height: 80svh;
-
-        justify-content: space-evenly;
-    }
-
-    #form-h2 {
-        margin: 1.5rem 0;
-        color: var(--amarillo);
-    }
-
-    #contacto-form {
-        width: 90%;
         gap: 1.5rem;
     }
-
-    #contacto-redes {
-        border: none;
-        border-radius: 2rem;
-        background-color: var(--casiblanco);
-        margin: 0 0 0 auto;
-
-        scale: 0.7;
+    #presentacion-info {
+        max-width: 100%;
+    }
+    #presentacion-info h1 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    #nombre {
+        margin-left: calc(50svw - 50%);
+        font-size: 2rem;
+    }
+    #presentacion-foto {
+        max-width: none;
+        /* width: 50svw; */
+        height: 10rem;
+        width: 10rem;
+        margin: 0 auto;
+    }
+    #presentacion-foto img {
+        height: 40svw;
+        max-height: 10rem;
+        box-shadow: 1rem 0.5rem var(--marron);
+    }
+    #presentacion-tecnologias {
+        margin-top: 3rem;
+    }
+    #presentacion-tecnologias h2 {
+        left: -10%;
     }
 
-    #contacto h4{
-        color: white;
-    }
 
-    #mensaje-enviado h2{
-        color: var(--amarillo);
+
+
+    #navbar {
+        /* position: sticky;
+        scale: 0.8;
+        top: 3.5rem; */
+        column-gap: 0.01rem;
+        max-width: 100svw;
+        margin-top: -30svh;
+    }
+    #navbar-line {
+        width: 100%;
+        max-width: 100svw;
+        /* z-index: 100; */
+    }
+    #navbar a {
+        scale: 0.8;
+        cursor: none;
+    }
+    #navbar a:hover {
+        animation: none;
+        cursor: none;
     }
 }
-
-@keyframes responsive-open-anim {
-    0%{
-        height: 80svh;
-    }
-    100%{
-        height: 10svh;
-    }
-}
-
